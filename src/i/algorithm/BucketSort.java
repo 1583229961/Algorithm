@@ -36,7 +36,7 @@ System.out.print(d);
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		  int a[] = {78,17,39,26,72,94,21,12,23,68};
+		  int a[] = {78,17,3,26,72,94,21,12,23,68};
 		  bucketsort(a);
 		 System.out.println();
 	}
