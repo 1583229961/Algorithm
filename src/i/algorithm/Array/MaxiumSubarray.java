@@ -1,4 +1,4 @@
-package i.algorithm;
+package i.algorithm.Array;
 
 public class MaxiumSubarray {
 

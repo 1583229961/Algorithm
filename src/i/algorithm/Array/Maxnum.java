@@ -1,4 +1,6 @@
-package i.algorithm;
+package i.algorithm.Array;
+
+import java.util.HashSet;
 
 public class Maxnum {
 

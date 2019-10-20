@@ -1,9 +1,9 @@
-package i.algorithm;
+package i.algorithm.Array;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-
+//查找元素的出现次数
 public class Reverse {
 public static void main(String []args) {
 	Scanner scanner=new Scanner(System.in);
