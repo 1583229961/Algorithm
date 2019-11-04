@@ -1,4 +1,4 @@
-package Node;
+package NodeAlg;
 public class Reverse {
 	public static void main(String[] args) {
 		Node2 head = new Node2(0);
@@ -9,17 +9,17 @@ public class Reverse {
 		node1.setNext(node2);
 		node2.setNext(node3);
  
-		// ´òÓ¡·´×ªÇ°µÄÁ´±í
+		// ï¿½ï¿½Ó¡ï¿½ï¿½×ªÇ°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		Node2 h = head;
 		while (null != h) {
 			System.out.print(h.getData() + " ");
 			h = h.getNext();
 		}
-		// µ÷ÓÃ·´×ª·½·¨
+		// ï¿½ï¿½ï¿½Ã·ï¿½×ªï¿½ï¿½ï¿½ï¿½
 		head = Reverse1(head);
  
 		System.out.println("\n**************************");
-		// ´òÓ¡·´×ªºóµÄ½á¹û
+		// ï¿½ï¿½Ó¡ï¿½ï¿½×ªï¿½ï¿½Ä½ï¿½ï¿½
 		while (null != head) {
 			System.out.print(head.getData() + " ");
 			head = head.getNext();
@@ -27,23 +27,23 @@ public class Reverse {
 	}
  
 	/**
-	 * µÝ¹é£¬ÔÚ·´×ªµ±Ç°½ÚµãÖ®Ç°ÏÈ·´×ªºóÐø½Úµã
+	 * ï¿½Ý¹é£¬ï¿½Ú·ï¿½×ªï¿½ï¿½Ç°ï¿½Úµï¿½Ö®Ç°ï¿½È·ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½
 	 */
 	public static Node2 Reverse1(Node2 head) {
-		// head¿´×÷ÊÇÇ°Ò»½áµã£¬head.getNext()ÊÇµ±Ç°½áµã£¬reHeadÊÇ·´×ªºóÐÂÁ´±íµÄÍ·½áµã
+		// headï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Ò»ï¿½ï¿½ã£¬head.getNext()ï¿½Çµï¿½Ç°ï¿½ï¿½ã£¬reHeadï¿½Ç·ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½
 		if (head == null || head.getNext() == null) {
-			return head;// ÈôÎª¿ÕÁ´»òÕßµ±Ç°½áµãÔÚÎ²½áµã£¬ÔòÖ±½Ó»¹»Ø
+			return head;// ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½Î²ï¿½ï¿½ã£¬ï¿½ï¿½Ö±ï¿½Ó»ï¿½ï¿½ï¿½
 		}
-		Node2 reHead = Reverse1(head.getNext());// ÏÈ·´×ªºóÐø½Úµãhead.getNext()
-		head.getNext().setNext(head);// ½«µ±Ç°½áµãµÄÖ¸ÕëÓòÖ¸ÏòÇ°Ò»½áµã
-		head.setNext(null);// Ç°Ò»½áµãµÄÖ¸ÕëÓòÁîÎªnull;
-		return reHead;// ·´×ªºóÐÂÁ´±íµÄÍ·½áµã
+		Node2 reHead = Reverse1(head.getNext());// ï¿½È·ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½head.getNext()
+		head.getNext().setNext(head);// ï¿½ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ç°Ò»ï¿½ï¿½ï¿½
+		head.setNext(null);// Ç°Ò»ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªnull;
+		return reHead;// ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í·ï¿½ï¿½ï¿½
 	}
 }
  
 	class Node2 {
-		private int Data;// Êý¾ÝÓò
-		private Node2 Next;// Ö¸ÕëÓò
+		private int Data;// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+		private Node2 Next;// Ö¸ï¿½ï¿½ï¿½ï¿½
  
 		public Node2(int Data) {
 			// super();

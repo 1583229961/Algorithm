@@ -1,4 +1,4 @@
-package Node;
+package NodeAlg;
 
 import java.awt.font.TextMeasurer;
 import java.util.LinkedList;
@@ -18,7 +18,7 @@ class Node {
 public class Crud {
 	Node head = null;
 
-	public void add(int data) {// Î²²¿²åÈëÒ»¸öÔªËØ
+	public void add(int data) {// Î²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ôªï¿½ï¿½
 		
 		if (head == null) {
 			head = new Node(data);
@@ -31,7 +31,7 @@ public class Crud {
 		temp.nextNode =new Node(data);;
 	}
 
-	public Boolean delete(int index) {// É¾³ıÖ¸¶¨Î»ÖÃµÄÔªËØ
+	public Boolean delete(int index) {// É¾ï¿½ï¿½Ö¸ï¿½ï¿½Î»ï¿½Ãµï¿½Ôªï¿½ï¿½
 		if (index < 0 || index > length()) {
 			return false;
 

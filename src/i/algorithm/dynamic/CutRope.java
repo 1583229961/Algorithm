@@ -10,7 +10,7 @@ public class CutRope {
 		dp[2]=2;
 		dp[3]=3;
 		for (int i = 4; i < a+1; i++) {
-			for (int j = 1; j <= i/2; j++) {//取j=i/2是为了避免重复的运算.如2*6和6*2相同
+			for (int j = 0; j <= i/2; j++) {//取j=i/2是为了避免重复的运算.如2*6和6*2相同
 				dp[i]=Math.max(dp[j]*dp[i-j],dp[i]);
 			}
 			
